@@ -1,0 +1,28 @@
+{
+  "cart": [],
+  "book": [
+    {
+      "book": {
+        "id": 11,
+        "description": "saf",
+        "name": "hahah",
+        "image": "dqsd",
+        "prix": 154,
+        "quantity": 45,
+        "status": "dispo"
+      },
+      "quantity": 1,
+      "id": 1
+    }
+  ],
+  "client": [
+    {
+      "firstname": "ahmed",
+      "lastname": "argoubi",
+      "email": "argoub@esprit.tn",
+      "phone": "12457896",
+      "password": "123456",
+      "id": 2
+    }
+  ]
+}
