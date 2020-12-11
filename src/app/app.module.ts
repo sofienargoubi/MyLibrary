@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { ClientComponent } from './client/client.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { BooksComponent } from './books/books.component';
-import { CartComponent } from './cart/cart.component';
+
 
 
 import { LoginComponent } from './login/login.component';
@@ -18,13 +18,16 @@ import { ToastrModule, ToastNoAnimation, ToastNoAnimationModule } from 'ngx-toas
 import { Page404Component } from './page404/page404.component';
 import { ProfilComponent } from './profil/profil.component';
 import { FooterComponent } from './footer/footer.component';
+import { DetailBookComponent } from './detail-book/detail-book.component';
+import { BooksViewComponent } from './books-view/books-view.component';
+import { LibraryComponent } from './library/library.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientComponent,
     BooksComponent,
-    CartComponent,
+ 
     LoginComponent,
     WishlistComponent,
     RegisterComponent,
@@ -33,6 +36,9 @@ import { FooterComponent } from './footer/footer.component';
     Page404Component,
     ProfilComponent,
     FooterComponent,
+    DetailBookComponent,
+    BooksViewComponent,
+    LibraryComponent,
 
   ],
     imports: [

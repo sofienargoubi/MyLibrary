@@ -1,26 +1,58 @@
 {
-  "cart": [],
+  "library": [
+    {
+      "id": 1,
+      "name": "Horria",
+      "description": "welcome to our libraby mothfkrr",
+      "place": "Ariena",
+      "status": "Ouvert",
+      "book": {
+        "id": 1,
+        "name": "Yosr",
+        "image": "img",
+        "description": "yossssssssssr",
+        "author": "Ahmed",
+        "prix": 200
+      }
+    },
+    {
+      "id": 2,
+      "name": "kamel",
+      "place": "Ariena",
+      "book": {
+        "id": 1,
+        "name": "Yosr",
+        "image": "img",
+        "description": "yossssssssssr",
+        "author": "Ahmed",
+        "prix": 200
+      }
+    }
+  ],
   "book": [
     {
-      "book": {
-        "id": 11,
-        "description": "saf",
-        "name": "hahah",
-        "image": "dqsd",
-        "prix": 154,
-        "quantity": 45,
-        "status": "dispo"
-      },
-      "quantity": 1,
-      "id": 1
+      "id": 1,
+      "name": "Yosr",
+      "image": "img",
+      "description": "yossssssssssr",
+      "author": "Ahmed",
+      "prix": 200
+    },
+    {
+      "id": 2,
+      "name": "Yosr",
+      "image": "img",
+      "description": "yossssssssssr",
+      "author": "Ahmed",
+      "prix": 200
     }
   ],
   "client": [
     {
-      "firstname": "ahmed",
-      "lastname": "argoubi",
+      "firstname": "sofien",
+      "lastname": "argoubii",
       "email": "argoub@esprit.tn",
-      "phone": "12457896",
+      "phone": 12345698,
       "password": "123456",
       "id": 2
     }

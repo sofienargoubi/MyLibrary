@@ -1,20 +1,25 @@
+
+
 export class Books{
   id: number;
   name: string;
   image: string;
   description: string;
+  author : string;
   prix: number;
-  quantity: number;
-  status: string;
+ 
+  
+  
+  
 
 
-  constructor(id: number, name: string, image: string, description: string, prix: number, quantity: number, status: string) {
+  constructor(id: number, name: string, image: string, description: string, Author : string, prix: number) {
     this.id = id;
     this.name = name;
     this.image = image;
     this.description = description;
+    this.author = Author;
     this.prix = prix;
-    this.quantity = quantity;
-    this.status = status;
+  
   }
 }

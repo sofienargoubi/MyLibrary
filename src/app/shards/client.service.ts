@@ -30,7 +30,13 @@ export class ClientService {
     return body || { };
   }
   constructor(private http: HttpClient) { }
-  
+  //update
+  updateClient(id : string,client: Client): Observable<any> {
+   
+    return this.http.put(this.clientUrl + '/' + id, client, this.httpOptions).pipe(
+      map(this.extractData),
+      catchError(this.handleError));
+    }
   // register 
 
   registerClient(client : Client) : Observable<any>{

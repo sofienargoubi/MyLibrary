@@ -6,7 +6,7 @@ export class Client {
     private email? : String ,
     private phone? : String ,
     private password? : String ,
-    private _id?:String
+    private id?:String
 ){}
 
 
