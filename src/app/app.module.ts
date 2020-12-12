@@ -21,7 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { DetailBookComponent } from './detail-book/detail-book.component';
 import { BooksViewComponent } from './books-view/books-view.component';
 import { LibraryComponent } from './library/library.component';
-
+import { NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +46,7 @@ import { LibraryComponent } from './library/library.component';
         AppRoutingModule,
         FormsModule,
       HttpClientModule,
+      NgxPaginationModule,
       FormsModule,
       ToastNoAnimationModule.forRoot(),
        ReactiveFormsModule

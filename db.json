@@ -1,32 +1,47 @@
 {
+  "wishlist": [
+    {
+      "client": {
+        "firstname": "sofien",
+        "lastname": "argoubii",
+        "email": "argoub@esprit.tn",
+        "phone": 12345698,
+        "password": "123456",
+        "id": 2
+      },
+      "book": {
+        "id": 2,
+        "name": "Yosr",
+        "image": "img",
+        "status": "dispo",
+        "description": "yossssssssssr",
+        "author": "Ahmed",
+        "prix": 200,
+        "library": {
+          "id": 1,
+          "name": "Horria",
+          "description": "welcome to our libraby mothfkrr",
+          "place": "Ariena",
+          "status": "Ouvert"
+        }
+      },
+      "id": 4
+    }
+  ],
   "library": [
     {
       "id": 1,
       "name": "Horria",
       "description": "welcome to our libraby mothfkrr",
       "place": "Ariena",
-      "status": "Ouvert",
-      "book": {
-        "id": 1,
-        "name": "Yosr",
-        "image": "img",
-        "description": "yossssssssssr",
-        "author": "Ahmed",
-        "prix": 200
-      }
+      "status": "Ouvert"
     },
     {
       "id": 2,
       "name": "kamel",
+      "description": "welcome to our libraby mothfkrr",
       "place": "Ariena",
-      "book": {
-        "id": 1,
-        "name": "Yosr",
-        "image": "img",
-        "description": "yossssssssssr",
-        "author": "Ahmed",
-        "prix": 200
-      }
+      "status": "Ouvert"
     }
   ],
   "book": [
@@ -34,17 +49,65 @@
       "id": 1,
       "name": "Yosr",
       "image": "img",
+      "status": "dispo",
       "description": "yossssssssssr",
       "author": "Ahmed",
-      "prix": 200
+      "prix": 200,
+      "library": {
+        "id": 2,
+        "name": "kamel",
+        "description": "welcome to our libraby mothfkrr",
+        "place": "Ariena",
+        "status": "Ouvert"
+      }
     },
+   
     {
-      "id": 2,
+      "id": 1,
       "name": "Yosr",
       "image": "img",
+      "status": "dispo",
       "description": "yossssssssssr",
       "author": "Ahmed",
-      "prix": 200
+      "prix": 200,
+      "library": {
+        "id": 2,
+        "name": "kamel",
+        "description": "welcome to our libraby mothfkrr",
+        "place": "Ariena",
+        "status": "Ouvert"
+      }
+    },{
+      "id": 1,
+      "name": "alii",
+      "image": "img",
+      "status": "dispo",
+      "description": "yossssssssssr",
+      "author": "Ahmed",
+      "prix": 200,
+      "library": {
+        "id": 2,
+        "name": "kamel",
+        "description": "welcome to our libraby mothfkrr",
+        "place": "Ariena",
+        "status": "Ouvert"
+      }
+    },
+    {
+      "id": 1,
+      "name": "Yosr",
+      "image": "img",
+      "status": "dispo",
+      "description": "yossssssssssr",
+      "author": "Ahmed",
+      "prix": 200,
+      "library": {
+        "id": 2,
+        "name": "kamel",
+        "description": "welcome to our libraby mothfkrr",
+        "place": "Ariena",
+        "status": "Ouvert"
+      }
     }
   ],
   "client": [

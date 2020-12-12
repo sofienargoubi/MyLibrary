@@ -24,10 +24,11 @@ const routes: Routes = [
   {path: 'client', component: ClientComponent, canActivate:[AuthGuard]},
   {path: 'library', component: LibraryComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'Books', component: BooksComponent , canActivate:[AuthGuard],
+  {path: 'library/:idLibrary', component: BooksComponent , canActivate:[AuthGuard],
     children : [
       {path:'', component : BooksViewComponent},
       {path:'DetailBook/:id', component : DetailBookComponent}
+    
 ]},
 
   {path: 'wishlist', component: WishlistComponent, canActivate:[AuthGuard]},

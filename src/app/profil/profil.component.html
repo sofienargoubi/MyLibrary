@@ -73,5 +73,25 @@
         </form>
       </div>
     </div>
-  </div>
+   
+    <h1 class="page-header">Wishlist</h1>
+    <section>
+      <div class="row">
+      <div class="col-md-2 mb-3" >
+      <div class="">
+   
+     
+      
+        
+    <app-wishlist  *ngFor="let w of wishlistP" [wishlistW]="w" (delete)="deleteBook($event)" ></app-wishlist>
+       
+   
+      </div>
+      <!-- Card -->
+    </div>
+    </div>
+  </section>
+  
+</div>
+
   <app-footer></app-footer>

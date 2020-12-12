@@ -1,3 +1,65 @@
-<p *ngIf="book">
-    {{book.name}}
-</p>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+<section class="mb-5">
+
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0">
+  
+        <div id="mdb-lightbox-ui"></div>
+  
+        <div class="mdb-lightbox">
+  
+          <div class="row product-gallery mx-1">
+  
+            <div class="col-12 mb-0">
+              <figure class="view overlay rounded z-depth-1 main-img">
+                <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+                  data-size="710x823">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15a.jpg"
+                    class="img-fluid z-depth-1">
+                </a>
+              </figure>
+             
+    
+            </div>
+           
+          </div>
+  
+        </div>
+  
+      </div>
+      <div class="col-md-6">
+  
+        <h5>{{book.name}}</h5>
+        <p class="mb-2 text-muted text-uppercase small">{{book.status}}</p>
+       
+        <p><span class="mr-1"><strong>${{book.prix}}</strong></span></p>
+        <p class="pt-1">{{book.description}}.</p>
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless mb-0">
+            <tbody>
+              <tr>
+                <th class="pl-0 w-25" scope="row"><strong>Author</strong></th>
+                <td>{{book.author}}</td>
+              </tr>
+              <tr>
+                <th class="pl-0 w-25" scope="row"><strong>Status</strong></th>
+                <td>{{book.status}}</td>
+              </tr>
+              <tr>
+                <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
+                <td>{{book.library.place}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr>
+        <button type="button" class="btn btn-primary btn-md mr-1 mb-2">Buy now</button>
+      </div>
+    </div>
+  
+  </section>
+</div>
+</div>
+<app-footer></app-footer>
