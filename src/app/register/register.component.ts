@@ -5,6 +5,7 @@ import {Client} from '../model/client';
 import { ClientService } from '../shards/client.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
@@ -15,11 +16,13 @@ export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup
 
+ 
   constructor(
     private fb: FormBuilder,
     private clientService : ClientService,
     private router : Router,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    
   
 
     ) {
@@ -28,12 +31,12 @@ export class RegisterComponent implements OnInit {
       firstname: new FormControl('',[
         Validators.required,
         Validators.pattern("[A-Za-z .'-]+"),
-        Validators.minLength(2)
+        Validators.minLength(4)
       ]),
       lastname: new FormControl('',[
         Validators.required,
         Validators.pattern("[A-Za-z .'-]+"),
-        Validators.minLength(2)
+        Validators.minLength(4)
       ]),
       phone: new FormControl('',[
         Validators.required,
@@ -43,11 +46,13 @@ export class RegisterComponent implements OnInit {
       ]),
       email: new FormControl('',[
         Validators.required,
-        Validators.email
+        Validators.email,
+        Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+   
       ]),
       password: new FormControl('',[
         Validators.required,
-        Validators.minLength(6)
+        Validators.minLength(8)
       ]),
       repassword: new FormControl('',[
         Validators.required,
@@ -87,7 +92,8 @@ export class RegisterComponent implements OnInit {
 
       }
     );
-    
+   
+ 
   }
   
 

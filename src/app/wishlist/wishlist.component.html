@@ -1,53 +1,39 @@
 <!--Section: Block Content-->
+<section>
+<div class="column">
+<div class="col-md-4 mb-5">
+  
+  <!-- Card -->
+  <div class="">
 
-
-
-
-  <!-- Grid row 
-
-  <ng-template [ngIf]="(wishlist.toString() | json) != '{}'" >
- --> 
- 
-    
-   <!--<div *ngIf="w.client.id.toString() == idC.toString()">
-       Card -->
-       
         <div class="view zoom overlay z-depth-2 rounded">
           <img class="img-fluid w-100"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14a.jpg" alt="Sample">     
+            src="assets/img/{{wishlistW.book.image}}" alt="Sample">
+         
         </div>
 
         <div class="text-center pt-4">
 
-          <h5>{{wishlistW.book.name}}</h5>
-          <p class="mb-2 text-muted text-uppercase small">{{wishlistW.book.status}}</p>
-          
+          <h5><strong>{{wishlistW.book.name}}</strong></h5>
+          <p  [ngClass]="{'text-danger' : wishlistW.book.status == 'Out of Stock' ,'text-success': wishlistW.book.status ==='In Stock'  }">{{wishlistW.book.status}}</p>
+         
           <hr>
-          <h6 class="mb-3">
-          
-            <span class="text-black"><s>${{wishlistW.book.prix}}</s></span>
-          </h6>
-          <button type="button" class="btn btn-primary btn-sm mr-1 mb-2"><i
-              class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
-          <button type="button" class="btn btn-light btn-sm mr-1 mb-2" (click)="sendDeleteEvent()"><i
-              class="fas fa-info-circle pr-2"></i>Delete</button>
-          <button type="button" class="btn btn-elegant btn-sm px-3 mb-2 material-tooltip-main"
-            data-toggle="tooltip" data-placement="top" title="Remove from wishlist"><i
-              class="fas fa-times"></i></button>
-            
+          <h6 class="mb-3"><strong>{{wishlistW.book.prix}} $</strong></h6>
+          <button type="button" class="btn btn-danger btn-sm mr-1 mb-2" (click)="sendDeleteEvent()"><i
+              class="fas fa-shopping-cart pr-2"></i>Delete</button>
+          <button type="button" class="btn btn-light btn-sm mr-1 mb-2" ><i
+              class="fas fa-info-circle pr-2"></i>Details</button>
+     
 
         </div>
+
+      </div>
+      <!-- Grid column -->
+      
+    </div>
+      
+      </div>
+      <!-- Grid row --> 
+    </section>  
     
-    <!-- Grid column 
-
-  </div>-->
-
-
-
- <!-- </ng-template><h4 style="margin-left: 50%;">No items..</h4>
-
-
-   Grid row -->
-
-
 <!--Section: Block Content-->

@@ -10,6 +10,7 @@ import { LibraryService } from '../shards/library.service';
 })
 export class LibraryComponent implements OnInit {
 
+  p: number = 1;
   library : Library[]=[];
 
   constructor(private ls:LibraryService) { }

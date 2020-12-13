@@ -6,10 +6,21 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <form class="form-inline my-2 my-lg-0 ml-auto">
-            <button *ngIf="!isLoggedIn" class="btn btn-info float-right" [routerLink]="['/login']">Login</button>
-            <button *ngIf="!isLoggedIn"  class="btn btn-primary mx-3 my-2 my-sm-0 pull-right" [routerLink]="['/register']">Register</button>
-            <button *ngIf="isLoggedIn" (click)="logout()" class="btn btn-primary mx-3 my-2 my-sm-0" [routerLink]="['/register']" >Logout</button>
-       
+            <button *ngIf="!isLoggedIn" class="btn btn-info float-right" [routerLink]="['/login']"><i class="bi bi-house"><strong>Login</strong></i></button>
+    
+      
+            <button *ngIf="!isLoggedIn"  class="btn btn-primary mx-3 my-2 my-sm-0 pull-right" [routerLink]="['/register']"><i class="bi bi-house"><strong>Register</strong></i></button>
+            <button *ngIf="isLoggedIn"  class="btn btn-light mx-3 my-2 my-sm-0 pull-right" [routerLink]="['/']"><i class="bi bi-house"><strong>Home</strong></i></button>
+           
+            <button *ngIf="isLoggedIn"  class="btn btn-light mx-3 my-2 my-sm-0 pull-right" [routerLink]="['/library']"><i class="bi bi-house"><strong>Our Library</strong></i></button>
+            
         </form>
+      
+        
     </div>
+      <form class="form-inline">
+        <button *ngIf="isLoggedIn"  class="btn btn-light mx-3 my-2 my-sm-0 pull-right" [routerLink]="['/profil']"><i class="bi bi-house"><strong>My Profil</strong></i></button>
+        <button *ngIf="isLoggedIn" (click)="logout()" class="btn btn-secondary mx-3 my-2 my-sm-0" [routerLink]="['/register']" ><i class="bi bi-house"><strong>Logout</strong></i></button>
+        
+          </form>
 </nav>

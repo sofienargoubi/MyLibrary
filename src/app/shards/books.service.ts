@@ -11,6 +11,10 @@ import {Books} from '../model/Books';
 export class BooksService {
 
   BookUrl = 'http://localhost:3000/book';
+  wishlistUrl = 'http://localhost:3000/wishlist?book.id=';
+  BookSearchUrl = 'http://localhost:3000/book?name_like=';
+  BookLibraryUrl = 'http://localhost:3000/book?library.id=';
+
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -39,7 +43,20 @@ export class BooksService {
       map(this.extractData),
       catchError(this.handleError));
   }
+  getBooksByLibrary(id : string): Observable<any>  {
+    return this.http.get<any>(this.BookLibraryUrl+ id);
+  }
+  getSearchBooks(cri : string): Observable<any>  {
+    return this.http.get(this.BookSearchUrl+cri);
+  }
+  getFilterBooks(cri1 : string,cri2 : string): Observable<any>  {
+    return this.http.get(this.BookSearchUrl+cri1+'&library.place='+cri2);
+  }
   findbyId(id: number): Observable<any> {
     return this.http.get<any>(this.BookUrl + '/' + id);
   }
+  checkBookInWishlist(id: string): Observable<any> {
+    return this.http.get<any>(this.wishlistUrl  + id);
+  }
+
 }

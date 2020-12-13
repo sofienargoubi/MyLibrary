@@ -10,103 +10,234 @@
         "id": 2
       },
       "book": {
-        "id": 2,
-        "name": "Yosr",
-        "image": "img",
-        "status": "dispo",
-        "description": "yossssssssssr",
-        "author": "Ahmed",
-        "prix": 200,
+        "id": 1,
+        "name": "Programming Language",
+        "image": "book1.jpg",
+        "status": "In Stock",
+        "description": "C est un langage de programmation impératif généraliste, de bas niveau. Inventé au début des années 1970 pour réécrire UNIX, C est devenu un des langages les plus utilisés, encore de nos jours",
+        "author": "Ales Allain",
+        "prix": 400,
         "library": {
           "id": 1,
-          "name": "Horria",
-          "description": "welcome to our libraby mothfkrr",
+          "name": "Avant-garde Library",
+          "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
           "place": "Ariena",
-          "status": "Ouvert"
+          "status": "Open"
         }
       },
-      "id": 4
+      "id": 1
     }
   ],
   "library": [
     {
       "id": 1,
-      "name": "Horria",
-      "description": "welcome to our libraby mothfkrr",
+      "image": "library1.jpg",
+      "name": "Avant-garde Library",
+      "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
       "place": "Ariena",
-      "status": "Ouvert"
+      "status": "Open"
     },
     {
       "id": 2,
-      "name": "kamel",
-      "description": "welcome to our libraby mothfkrr",
-      "place": "Ariena",
-      "status": "Ouvert"
+      "image": "library2.jpg",
+      "name": "Knowledge Library",
+      "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+      "place": "Tunis",
+      "status": "Open"
+    },
+    {
+      "id": 3,
+      "image": "library3.jpg",
+      "name": "Stellar Library",
+      "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+      "place": "Gabes",
+      "status": "Close"
+    },
+    {
+      "id": 4,
+      "image": "library4.jpg",
+      "name": "Memorial Library",
+      "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+      "place": "Sfax",
+      "status": "Open"
+    },
+    {
+      "id": 5,
+      "image": "library5.jpg",
+      "name": "Heritage Library",
+      "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+      "place": "Sousse",
+      "status": "Open"
     }
   ],
   "book": [
     {
       "id": 1,
-      "name": "Yosr",
-      "image": "img",
-      "status": "dispo",
-      "description": "yossssssssssr",
-      "author": "Ahmed",
-      "prix": 200,
+      "name": "Programming Language",
+      "image": "book1.jpg",
+      "status": "In Stock",
+      "description": "C est un langage de programmation impératif généraliste, de bas niveau. Inventé au début des années 1970 pour réécrire UNIX, C est devenu un des langages les plus utilisés, encore de nos jours",
+      "author": "Ales Allain",
+      "prix": 400,
       "library": {
-        "id": 2,
-        "name": "kamel",
-        "description": "welcome to our libraby mothfkrr",
+        "id": 1,
+        "name": "Avant-garde Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
         "place": "Ariena",
-        "status": "Ouvert"
-      }
-    },
-   
-    {
-      "id": 1,
-      "name": "Yosr",
-      "image": "img",
-      "status": "dispo",
-      "description": "yossssssssssr",
-      "author": "Ahmed",
-      "prix": 200,
-      "library": {
-        "id": 2,
-        "name": "kamel",
-        "description": "welcome to our libraby mothfkrr",
-        "place": "Ariena",
-        "status": "Ouvert"
-      }
-    },{
-      "id": 1,
-      "name": "alii",
-      "image": "img",
-      "status": "dispo",
-      "description": "yossssssssssr",
-      "author": "Ahmed",
-      "prix": 200,
-      "library": {
-        "id": 2,
-        "name": "kamel",
-        "description": "welcome to our libraby mothfkrr",
-        "place": "Ariena",
-        "status": "Ouvert"
+        "status": "Open"
       }
     },
     {
-      "id": 1,
-      "name": "Yosr",
-      "image": "img",
-      "status": "dispo",
-      "description": "yossssssssssr",
-      "author": "Ahmed",
-      "prix": 200,
+      "id": 2,
+      "name": "The national bestseller",
+      "image": "book2.jpg",
+      "status": "In Stock",
+      "description": "She was known to the world as Emily Doe when she stunned millions with a letter. Brock Turner had been sentenced to just six months in county jail after he was found sexually assaulting her on Stanford’s campus",
+      "author": "Bill Bryson",
+      "prix": 300,
+      "library": {
+        "id": 1,
+        "image": "library1.jpg",
+        "name": "Avant-garde Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Ariena",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 8,
+      "name": "The Elegant Universe",
+      "image": "book8.jpg",
+      "status": "In Stock",
+      "description": "Based on Barron's popular and authoritative The Food Lover's Companion,this enlarged and enhanced new reference volume was written for discerning home chefs and everybody else who wants to become more knowledgeable about good food and elegant dining",
+      "author": "Brian Greene",
+      "prix": 457,
+      "library": {
+        "id": 1,
+        "image": "library1.jpg",
+        "name": "Avant-garde Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Ariena",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 9,
+      "name": "The Interval Market Model",
+      "image": "book9.jpg",
+      "status": "In Stock",
+      "description": "Two brothers and their friend stumble upon the wreckage of a plane–the pilot is dead and his duffle bag contains four million dollars in cash. In order to hide, keep, and share the fortune, these ordinary men all agree to a simple plan",
+      "author": "Pierre Bernhard",
+      "prix": 149,
+      "library": {
+        "id": 1,
+        "image": "library1.jpg",
+        "name": "Avant-garde Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Ariena",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Décourir l'informatique",
+      "image": "book10.jpg",
+      "status": "Out of Stock",
+      "description": "From the highly acclaimed, multiple award-winning Anthony Doerr, the stunningly beautiful instant New York Times bestseller about a blind French girl and a German boy whose paths collide in occupied France as both try to survive the devastation of World War II",
+      "author": "Dan Gookin",
+      "prix": 220,
+      "library": {
+        "id": 1,
+        "image": "library1.jpg",
+        "name": "Avant-garde Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Ariena",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Infinite Power",
+      "image": "book3.jpg",
+      "status": "In Stock",
+      "description": "Life of Pi is a fantasy adventure novel by Yann Martel published in 2001. The protagonist, Piscine Molitor Pi Patel, a Tamil boy from Pondicherry",
+      "author": "Steven Strogatz",
+      "prix": 300,
+      "library": {
+        "id": 1,
+        "image": "library1.jpg",
+        "name": "Avant-garde Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Ariena",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 7,
+      "name": "The Elegant Universe",
+      "image": "book7.jpg",
+      "status": "Out of Stock",
+      "description": "Youll never think of bees, their keepers, or the fruits (and nuts) of their laborsthe same way again. Trevor Corson, author of The Secret Life of Lobsters",
+      "author": "Brian Greene",
+      "prix": 457,
       "library": {
         "id": 2,
-        "name": "kamel",
-        "description": "welcome to our libraby mothfkrr",
-        "place": "Ariena",
-        "status": "Ouvert"
+        "image": "library2.jpg",
+        "name": "Knowledge Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Tunis",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 4,
+      "name": "The Demon-haunted World",
+      "image": "book4.jpg",
+      "status": "In Stock",
+      "description": "A national bestseller when it first appeared in 1963, The Fire Next Time galvanized the nation and gave passionate voice to the emerging civil rights movement",
+      "author": "Carl Sagan",
+      "prix": 187,
+      "library": {
+        "id": 5,
+        "image": "library5.jpg",
+        "name": "Heritage Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Sousse",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Enlightenment Now",
+      "image": "book5.jpg",
+      "status": "In Stock",
+      "description": "My name was Salmon, like the fish; first name, Susie. I was fourteen when I was murdered on December 6, 1973.",
+      "author": "Steven Pinker",
+      "prix": 257,
+      "library": {
+        "id": 5,
+        "image": "library5.jpg",
+        "name": "Heritage Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Sousse",
+        "status": "Open"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Stratégies de coopétition",
+      "image": "book5.jpg",
+      "status": "In Stock",
+      "description": "Alaska, 1920: a brutal place to homestead, and especially tough for recent arrivals Jack and Mabel. Childless, they are drifting apart--he breaking under the weight of the work of the farm; she crumbling from loneliness and despair",
+      "author": "Gérard Koenig",
+      "prix": 457,
+      "library": {
+        "id": 5,
+        "image": "library5.jpg",
+        "name": "Heritage Library",
+        "description": "La librairie est un commerce de détail destiné à la vente de livres. Il existe différents types de points de vente du livre : librairies de livres neufs (généralistes ou spécialisées)",
+        "place": "Sousse",
+        "status": "Open"
       }
     }
   ],
@@ -116,7 +247,7 @@
       "lastname": "argoubii",
       "email": "argoub@esprit.tn",
       "phone": 12345698,
-      "password": "123456",
+      "password": "12345678",
       "id": 2
     }
   ]

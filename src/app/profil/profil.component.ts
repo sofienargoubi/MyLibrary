@@ -18,6 +18,7 @@ import { WishlistComponent } from '../wishlist/wishlist.component';
 export class ProfilComponent implements OnInit , OnChanges {
 
   
+  
 
   firstnameC : string;
   lastnameC : string;
@@ -60,13 +61,21 @@ export class ProfilComponent implements OnInit , OnChanges {
   
   deleteBook(w :Wishlist){
     // console.log(w);
-     this.toastr.success('Delete Book Successfuly', 'fun!');
-     this.router.navigate(['/profil']);
+    
+   
      this.ws.deletewishlist(w.id).subscribe();
+     this.ws.getWishlist().subscribe((data: Wishlist[]) => {
+      //console.log(data);
+  
+      this.wishlistP = data;
+    });
+    this.toastr.success('Delete Book Successfuly', 'fun!');
  }
    
 
   updateClient( updateForm : NgForm){
+
+    
     console.log(updateForm.value.id);
     
      this.client = new Client( this.firstnameC,this.lastnameC,this.emailC, this.phoneC,this.passwordC ,this.idC);

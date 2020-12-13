@@ -2,13 +2,11 @@
 <div class="container" style="padding-top: 60px;">
     <h1 class="page-header">Register</h1>
     <div class="row">
-<div class="col-md-4 col-sm-6 col-xs-12">
-    <div class="text-center">
-      <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail" alt="avatar">
-      <h6>Upload a different photo...</h6>
-      <input type="file" class="text-center center-block well well-sm">
-    </div>
-  </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="text-center">
+              <img src="assets/img/cc.png" class="avatar img-circle img-thumbnail" alt="avatar">       
+            </div>
+          </div>
 <div class="container my-5">
     <form [formGroup]="registerForm" (ngSubmit)="register()">
         <div class="form-row">
@@ -19,7 +17,7 @@
                     <div *ngIf="firstname.touched && firstname.invalid">
                         <small *ngIf="firstname.errors.required" class="text-danger">Firstname is required<br></small>
                         <small *ngIf="firstname.errors.pattern" class="text-danger">Invalid Firstname<br></small>
-                        <small *ngIf="firstname.errors.minlength" class="text-danger">Firstname must contain two characters at least</small>
+                        <small *ngIf="firstname.errors.minlength" class="text-danger">Firstname must contain 4 characters at least</small>
                     </div>
                 </div>
             </div>
@@ -30,7 +28,7 @@
                     <div *ngIf="lastname.touched && lastname.invalid">
                         <small *ngIf="lastname.errors.required" class="text-danger">Lastname is required<br></small>
                         <small *ngIf="lastname.errors.pattern" class="text-danger">Invalid Lastname<br></small>
-                        <small *ngIf="lastname.errors.minlength" class="text-danger">Lastname must contain two characters at least</small>
+                        <small *ngIf="lastname.errors.minlength" class="text-danger">Lastname must contain 4 characters at least</small>
                     </div>
                 </div>
             </div>
@@ -68,7 +66,7 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
                     <div *ngIf="password.touched && password.invalid">
                         <small *ngIf="password.errors.required" class="text-danger">Password is required<br></small>
-                        <small *ngIf="password.errors.minlength" class="text-danger">password must contain 6 characters at least</small>
+                        <small *ngIf="password.errors.minlength" class="text-danger">password must contain 8 characters at least</small>
                     </div>
                 </div>
             </div>

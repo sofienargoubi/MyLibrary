@@ -6,31 +6,25 @@
       <!-- left column -->
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="text-center">
-          <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail" alt="avatar">
-          <h6>Upload a different photo... </h6>
-          <input type="file" class="text-center center-block well well-sm">
+          <img src="assets/img/cc.png" class="avatar img-circle img-thumbnail" alt="avatar">       
         </div>
       </div>
       <!-- edit form column -->
       <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-        <div class="alert alert-info alert-dismissable">
-          <a class="panel-close close" data-dismiss="alert">×</a> 
-          <i class="fa fa-coffee"></i>
-          This is an <strong>.alert</strong>. Use this to show important messages to the user.
-        </div>
+        
         <h3>Personal info</h3>
         <form class="form-horizontal" role="form" #updateForm="ngForm" (ngSubmit)="updateClient(updateForm);">
           <div class="form-group">
             <label class="col-lg-3 control-label">First name:</label>
             <div class="col-lg-8">
-              <input class="form-control" [(ngModel)]="firstnameC"  type="text" name="firstname" ngModel  required #firstname="ngModel"  >
+              <input class="form-control" [(ngModel)]="firstnameC"  type="text" name="firstname" ngModel  required #firstname="ngModel" minlength="4"  >
               <small *ngIf="firstname.touched && !firstname.valid" class="text-danger">firstname is required<br></small>
             </div>
           </div>
           <div class="form-group">
             <label class="col-lg-3 control-label">Last name:</label>
             <div class="col-lg-8">
-              <input class="form-control"[(ngModel)]="lastnameC" type="text" name="lastname"  ngModel  required #lastname="ngModel" >
+              <input class="form-control"[(ngModel)]="lastnameC" type="text" name="lastname"  ngModel  required #lastname="ngModel" minlength="4" >
               <small *ngIf="lastname.touched && !lastname.valid" class="text-danger">lastname is required<br></small>
             </div>
           </div>
@@ -45,14 +39,14 @@
           <div class="form-group">
             <label class="col-lg-3 control-label">Phone:</label>
             <div class="col-lg-8">
-              <input class="form-control" [(ngModel)]="phoneC"  type="number" name="phone" ngModel  required #phone="ngModel">
+              <input class="form-control" [(ngModel)]="phoneC"  type="number" name="phone" ngModel  required #phone="ngModel" minlength="4" maxlength="13">
               <small *ngIf="phone.touched && !phone.valid" class="text-danger">phone is required<br></small>
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">Password:</label>
             <div class="col-md-8">
-              <input class="form-control" [(ngModel)]="passwordC"  type="password" name="password" ngModel  required #password="ngModel">
+              <input class="form-control" [(ngModel)]="passwordC"  type="password" name="password" ngModel  required #password="ngModel" minlength="8">
               <small *ngIf="password.touched && !password.valid" class="text-danger">password is required<br></small>
             </div>
           </div>
@@ -75,23 +69,29 @@
     </div>
    
     <h1 class="page-header">Wishlist</h1>
-    <section>
-      <div class="row">
-      <div class="col-md-2 mb-3" >
-      <div class="">
+    
    
      
       
-        
-    <app-wishlist  *ngFor="let w of wishlistP" [wishlistW]="w" (delete)="deleteBook($event)" ></app-wishlist>
+ 
+  
+
+    <!-- Grid row -->
+  
+  
+      <!-- Grid column -->
+     
+    <app-wishlist  *ngFor="let w of wishlistP" [wishlistW]="w" (delete)="deleteBook($event)"></app-wishlist>
        
    
-      </div>
-      <!-- Card -->
-    </div>
-    </div>
-  </section>
+ 
+  <!-- Card -->
+
+
+
+
+    
   
-</div>
+    </div>
 
   <app-footer></app-footer>

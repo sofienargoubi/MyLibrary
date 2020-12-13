@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { element } from 'protractor';
 import { StringifyOptions } from 'querystring';
 import { Books } from '../model/Books';
 import { Client } from '../model/client';
@@ -14,10 +15,10 @@ import { WishlistService } from '../shards/wishlist.service';
 })
 export class BooksViewComponent implements OnInit {
 
-  @Input() id: string;
-@Input() maxSize: number;
-@Output() pageChange: EventEmitter<number>;
-@Output() pageBoundsCorrection: EventEmitter<number>;
+  bookwish : Books;
+  category : string = "?";
+  place : string = "?";
+  serach : string;
   p: number = 1;
   books: Books[] = [];
  idLibrary : string;
@@ -36,7 +37,7 @@ export class BooksViewComponent implements OnInit {
        console.log(this.book);*/
       });
      
-    this.bs.getBooks().subscribe((data: Books[]) => {
+    this.bs.getBooksByLibrary(this.idLibrary).subscribe((data: Books[]) => {
       console.log(data);
 
       this.books = data;
@@ -54,4 +55,28 @@ export class BooksViewComponent implements OnInit {
     let wish = new Wishlist(this.client,book);
     this.ws.addBook(wish).subscribe();
   }
+  searchBook(){
+    if(this.serach!=''){
+    this.bs.getSearchBooks(this.serach).subscribe((data: Books[]) => {
+      this.books = data;
+    });
+  }else{
+    this.bs.getBooks().subscribe((data: Books[]) => {
+      console.log(data);
+
+      this.books = data;
+    });
+  }
+  }
+  filterBook(){
+    this.bs.getFilterBooks(this.category,this.place).subscribe((data: Books[]) => {
+      this.books = data;
+    });
+  }
+  CheckBook(id : string){
+this.bs.checkBookInWishlist(id).subscribe((data: Books) => {
+  this.bookwish= data;
+  
+});
+}
 }
