@@ -21,7 +21,7 @@ import { LibraryComponent } from './library/library.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
-  {path: 'client', component: ClientComponent, canActivate:[AuthGuard]},
+  {path: 'client',canActivate:[AuthGuard], component: ClientComponent},
   {path: 'library', component: LibraryComponent},
   {path: 'login', component: LoginComponent},
   {path: 'library/:idLibrary', component: BooksComponent , canActivate:[AuthGuard],
