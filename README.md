@@ -31,7 +31,7 @@ Little Free Library. Welcome to the world's largest book-sharing movement!
 - Run "ng serve" in the main directory
 - Go to http://localhost:4200 and Enjoy ;)
 
-## :bulb: Devoloped With MERN stack
+## :bulb: Devoloped With 
 
 <p align="center">
   <img height="50" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/angular_logo_icon_169598.png" />
