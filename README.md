@@ -1,14 +1,11 @@
 <!-- Logo -->
-<p align="center">
-  <a>
-
-https://user-images.githubusercontent.com/48603169/134817896-f8c26e11-8f05-4479-b6b7-e14d4713d3c7.mp4
 
 
 
-    <img height="150" width="320" src="https://www.pinclipart.com/picdir/big/47-479954_tube-livre-png-icono-de-libros-png-clipart.png">
- </a>
-</p>
+ https://user-images.githubusercontent.com/48603169/134817896-f8c26e11-8f05-4479-b6b7-e14d4713d3c7.mp4
+
+
+
 
 <!-- Name -->
 
