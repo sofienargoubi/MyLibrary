@@ -30,7 +30,7 @@ Little Free Library. Welcome to the world's largest book-sharing movement!
 - npm install -g json-server
 - Go to main directory by typing "cd MyLibrary" and run "npm install"
 - Run "json-server --watch db.json" in the main directory
-- Run "ng serve" in the main directory
+- Run "ng serve --open" in the main directory
 - Go to http://localhost:4200 and Enjoy ;)
 
 ## :bulb: Devoloped With 
